@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather and Music</string>
+    <string name="condition_clear">Clear</string>
+    <string name="condition_unknown">unknown</string>
+</resources>

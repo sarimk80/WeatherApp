@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mk.weather">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens android:largeScreens="true"/>
+    <supports-screens android:normalScreens="true"/>
+    <supports-screens android:resizeable="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="AIzaSyA6ZjVV1EOnyD4uM8Dlm7j5EftXo8StKqc" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA6ZjVV1EOnyD4uM8Dlm7j5EftXo8StKqc" />
+
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>
